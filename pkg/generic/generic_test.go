@@ -65,7 +65,7 @@ func TestHTTPThriftGeneric(t *testing.T) {
 	p, err := NewThriftFileProvider("./http_test/idl/binary_echo.thrift")
 	test.Assert(t, err == nil, err)
 
-	// new
+	// new HTTPThriftGeneric
 	g, err := HTTPThriftGeneric(p)
 	test.Assert(t, err == nil, err)
 	defer g.Close()
